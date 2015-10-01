@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1W-kF-SZU">
+                                <rect key="frame" x="126" y="145" width="70" height="55"/>
+                                <state key="normal" title="Forward" image="arrow_button_metal_silver_up.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedOnForward:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VsE-WD-hlZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsX-dL-s36">
+                                <rect key="frame" x="195" y="175" width="70" height="55"/>
+                                <state key="normal" title="Right" image="arrow_button_metal_silver_right.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedOnRight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4CA-zx-twE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vF3-t7-5oa">
+                                <rect key="frame" x="126" y="213" width="70" height="55"/>
+                                <state key="normal" title="Backward" image="arrow_button_metal_silver_down.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedOnBackWard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aeg-xw-q6l"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="IP Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIC-C0-obx">
+                                <rect key="frame" x="20" y="23" width="84" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="192.168.0.12" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ayT-dS-YiO">
+                                <rect key="frame" x="156" y="20" width="148" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Port Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEI-Um-GYh">
+                                <rect key="frame" x="13" y="78" width="99" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1234" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5LF-dJ-A72">
+                                <rect key="frame" x="156" y="69" width="148" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOB-tk-R3w">
+                                <rect key="frame" x="55" y="175" width="70" height="55"/>
+                                <state key="normal" title="Left" image="arrow_button_metal_silver_left.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedOnLeft:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GEt-zX-7DQ"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CUk-1X-xBS">
+                                <rect key="frame" x="138" y="357" width="156" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NtW-EN-MTG">
+                                <rect key="frame" x="60" y="344" width="61" height="58"/>
+                                <state key="normal" title="Record" image="bigstock-microphone-icon-48651746.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedOnRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yyf-sq-37s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAd-qJ-rec">
+                                <rect key="frame" x="36" y="414" width="52" height="42"/>
+                                <state key="normal" title="Send Command" image="command-icon-1005072727.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedOnSendCommand:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pr2-Rc-hcU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAK-8i-hXB">
+                                <rect key="frame" x="20" y="238" width="67" height="60"/>
+                                <state key="normal" title="Rotate Left" image="arrow_black_gloss_counter_clockwise_fat.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedOnRleft:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hih-PR-mir"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWN-PA-tma">
+                                <rect key="frame" x="231" y="238" width="63" height="60"/>
+                                <state key="normal" title="Rotate Right" image="arrow_black_gloss_clockwise_fat.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedOnRright:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GqL-US-QOt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKp-qA-Gu7">
+                                <rect key="frame" x="60" y="307" width="61" height="30"/>
+                                <state key="normal" title="Head Up">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedOnHeadUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t1t-ec-BJH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efe-bD-PHC">
+                                <rect key="frame" x="213" y="307" width="81" height="30"/>
+                                <state key="normal" title="Head Down">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedOnHeadDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mPY-xc-Nzl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJH-0R-edK">
+                                <rect key="frame" x="140" y="410" width="56" height="51"/>
+                                <state key="normal" title="Get Weather" image="weather-icon.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedOnWeather:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pK3-SA-4tF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WnY-A5-c0I">
+                                <rect key="frame" x="232" y="402" width="77" height="65"/>
+                                <state key="normal" title="Get Recipe" image="food-icon.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedOnRecipe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4sa-hr-NLH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GO3-qp-q2K">
+                                <rect key="frame" x="203" y="107" width="101" height="56"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Connect" image="connect-icon1.png"/>
+                                <connections>
+                                    <action selector="tappedOnConnect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JJY-ok-weq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="ipAddress" destination="ayT-dS-YiO" id="ehQ-S0-vc6"/>
+                        <outlet property="portNumber" destination="5LF-dJ-A72" id="HyN-UW-xin"/>
+                        <outlet property="recordButton" destination="NtW-EN-MTG" id="7L0-6F-hF2"/>
+                        <outlet property="textFromVoice" destination="CUk-1X-xBS" id="TLb-qQ-WsG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow_black_gloss_clockwise_fat.png" width="220" height="190"/>
+        <image name="arrow_black_gloss_counter_clockwise_fat.png" width="220" height="190"/>
+        <image name="arrow_button_metal_silver_down.png" width="256" height="256"/>
+        <image name="arrow_button_metal_silver_left.png" width="256" height="256"/>
+        <image name="arrow_button_metal_silver_right.png" width="256" height="256"/>
+        <image name="arrow_button_metal_silver_up.png" width="256" height="256"/>
+        <image name="bigstock-microphone-icon-48651746.jpg" width="900" height="900"/>
+        <image name="command-icon-1005072727.png" width="256" height="256"/>
+        <image name="connect-icon1.png" width="247" height="182"/>
+        <image name="food-icon.jpg" width="1000" height="1000"/>
+        <image name="weather-icon.png" width="512" height="512"/>
+    </resources>
+</document>
